@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script src="quiz.js" defer></script>
+</head>
+<body>
+<div class="instruction" id="instruction">
+    <h1>Quiz</h1>
+    <ol>
+        <li>There are 5 questions.</li>
+        <li>Each question carries 1 mark.</li>
+        <li>No negative marking.</li>
+        <li>10 seconds per question.</li>
+    </ol>
+    <button id="startQuiz">Start</button>
+</div>
+<div class="quiz-container hidden" id="quiz">
+    <div class="timer" id="timer">Time left: 10</div>
+    <h2 class="question" id="question"></h2>
+    <div class="options">
+        <button class="option"></button>
+        <button class="option"></button>
+        <button class="option"></button>
+        <button class="option"></button>
+    </div>
+    <button class="next" id="next">Next</button>
+</div>
+<div class="result hidden" id="result">
+    <h2 id="score"></h2>
+    <div id="summary"></div>
+    <p id="fact"></p>
+    <button id = "retake" class = "next">Retake Quiz</button>
+</div>
+</body>
+</html>
